@@ -22,7 +22,7 @@ Be concise and opinionated. Don't hedge excessively. Give me a straight read.
 
 ## Review guide artifact
 
-Always publish a review guide as an Artifact, in the style of Linear's review guides (https://linear.app/docs/diffs#guides), whatever the PR's size. For a small or single-concern PR, keep it to one or two sections.
+If the PR is big enough that a file-by-file read would be hard to follow — enough files or distinct concepts that a reader needs an ordered walkthrough — publish a review guide as an Artifact, in the style of Linear's review guides (https://linear.app/docs/diffs#guides). Small or single-concern PRs don't need one; use your judgment, there's no line count that triggers it.
 
 The guide is a shareable review doc containing both the walkthrough and the review:
 
@@ -33,4 +33,4 @@ The guide is a shareable review doc containing both the walkthrough and the revi
 - When a diff line is its own block element (e.g. `display: block` spans) inside a `<pre>`, join the lines with no newline between them. A `<pre>` keeps every `\n`, so newline-joined block lines render with a blank line between each one.
 - Fold in the highlights and lowlights from the review above — put each finding in the section it belongs to, so the issue sits next to the code it's about.
 
-End with the review in text, followed by the artifact URL on its own line.
+End with the review in text. If you published an artifact, follow it with the artifact URL on its own line.
